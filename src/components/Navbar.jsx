@@ -5,6 +5,8 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
+import Logo from '../assets/layers.png'
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -42,10 +44,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <img src={Logo} alt='logo' className='w-9 h-9 object-contain' />
+          <p className='text-white pl-1 font-sans text-[18px] font-bold cursor-pointer flex '>
             Readul &nbsp;
-            <span className='sm:block hidden'> | Software Developer</span>
+            <span className='sm:block hidden font-sans'> | Software Developer</span>
           </p>
         </Link>
 
