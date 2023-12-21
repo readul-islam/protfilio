@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 
-import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
-import Readul from "../assets/readul.png";
 import fb from "../assets/facebook.png";
 import git from "../assets/github.png";
 import linkdin from "../assets/linkedin.png";
+import Readul from "../assets/readul.png";
+import { styles } from "../styles";
 
 const Hero = () => {
   return (
@@ -24,23 +23,34 @@ const Hero = () => {
               Hi, I'm <span className="text-[#915EFF]">Readul</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I'm problem solver &&  <br className="sm:block hidden" />
+              I'm problem solver && <br className="sm:block hidden" />
               develop interfaces and web applications
             </p>
             <div className="flex pt-2 md:pt-10 gap-2 md:gap-4">
-              <img className="cursor-pointer" width={30} src={linkdin}/>
-              <img className="cursor-pointer" width={30} src={git}/>
-              <img className="cursor-pointer" width={30} src={fb}/>
+              <a
+                href="https://www.linkedin.com/in/md-readul-islam/"
+                target="_blank"
+              >
+                <img className="cursor-pointer" width={30} src={linkdin} />
+              </a>
+              <a href="https://github.com/readul-islam" target="_blank">
+                <img className="cursor-pointer" width={30} src={git} />
+              </a>
+              <a
+                href="https://www.facebook.com/readul.islam.akash"
+                target="_blank"
+              >
+                <img className="cursor-pointer" width={30} src={fb} />
+              </a>
             </div>
           </div>
-          
         </div>
         <img className="z-50" width={600} src={Readul} />
-      {/* <div className="absolute  top-[400px] !right-0 md:top-56 w-full h-48 md:h-[500px]">
+        {/* <div className="absolute  top-[400px] !right-0 md:top-56 w-full h-48 md:h-[500px]">
         <ComputersCanvas />
       </div> */}
       </div>
-    
+
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
